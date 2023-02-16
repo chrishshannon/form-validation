@@ -89,11 +89,11 @@ body {
 }
 
 .main-content form .button-container button[type="submit"] {
-   background-color: #1885f2;
+   background-color: #0a447d;
 }
 
 .main-content form .button-container button[type="reset"] {
-    background-color: #777777;
+    background-color: #555555;
  }
 
 /* lesson plan content - right aside */
