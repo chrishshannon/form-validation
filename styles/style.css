@@ -1,0 +1,109 @@
+/* Globals */
+html {
+    font-size: 16px;
+}
+
+body {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: auto min-content;
+}
+
+.sr-only {
+    clip: rect(0 0 0 0); 
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap; 
+    width: 1px;
+  }
+
+/* Header content */
+.header-nav {
+    align-items: center;
+    background-color: #344a86;
+    color: whitesmoke;
+    display: flex;
+    grid-row: 1;
+    grid-column: 1 / span 2;
+    justify-content: space-between;
+    padding: 15px 20px;
+}
+
+.header-nav ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.header-nav ul li {
+    background-color: whitesmoke;
+    list-style-type: none;
+    padding: 10px 15px;
+}
+
+/* Main content */
+.main-content {
+    grid-row: 2;
+    grid-column: 1;
+}
+
+.main-content img {
+    margin: 10px 0;
+    width: 80px;
+}
+
+.main-content form {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content form label {
+    display: grid;
+    grid-template-columns: 125px min-content;
+    margin-bottom: 15px;
+}
+
+.main-content form label span,
+.main-content form .button-container button {
+    margin-right: 15px;
+}
+
+.main-content form label :nth-child(2) {
+    border: 1px solid #777777;
+    border-radius: 4px;
+    padding: 6px;
+}
+
+.main-content form .button-container {
+    padding-top: 10px;
+    margin-bottom: 15px;
+}
+
+.main-content form .button-container button {
+    border-style: none;
+    border-radius: 5px;
+    color: whitesmoke;
+    cursor: pointer;
+    padding: 6px 8px;
+}
+
+.main-content form .button-container button[type="submit"] {
+   background-color: #1885f2;
+}
+
+.main-content form .button-container button[type="reset"] {
+    background-color: #777777;
+ }
+
+/* lesson plan content - right aside */
+.lesson-content {
+    grid-row: 2;
+    grid-column: 2;
+}
+
+/* Footer content */
+footer {
+    grid-row: 3;
+    grid-column: 1 / span 2;
+}
